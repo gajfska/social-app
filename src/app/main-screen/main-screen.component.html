@@ -1,1 +1,26 @@
-<h3>Hello screen</h3>
+<div>
+    <div>
+        <div>
+            <button>Menu</button>
+            <p>UI love</p>
+            <button>icon</button>
+        </div>
+        <div>
+            <p>Princila Designers</p>
+            <p>who belive in smplicity</p>
+            <p>love with UI/ GUI/ UX</p>
+        </div>
+        <div>
+            <a>icon bager</a>
+            <a>icon</a>
+            <a>icon</a>
+        </div>
+    </div>
+
+    <div *ngFor="let social of socialMenu">
+        <p>icon</p>
+        <p>{{social.time}}</p>
+        <p>{{social.author}}</p>
+        <p>{{social.description}}</p>
+    </div>
+</div>
