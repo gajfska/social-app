@@ -1,26 +1,44 @@
 <div>
-    <div>
-        <div>
-            <button>Menu</button>
-            <p>UI love</p>
-            <button>icon</button>
+    <div id="home">
+        <div id="header-elements">
+            <button style="background: url('../../assets/images/screen1_header_top_menu_icon.png')"></button>
+            <p> <img src="../../assets/images/screen1_header_top_menu_name_shape.png"> UI love</p>
+            <img src="../../assets/images/screen1_header_top_bio_icon.png">
         </div>
-        <div>
-            <p>Princila Designers</p>
-            <p>who belive in smplicity</p>
-            <p>love with UI/ GUI/ UX</p>
+
+        <div id="content-box">
+            <div id="content-box-inner">
+                <p>Principal Designers</p>
+                <p>who belive in smplicity.</p>
+                <p>love with UI/ GUI/ UX</p>
+            </div>
         </div>
-        <div>
-            <a>icon bager</a>
-            <a>icon</a>
-            <a>icon</a>
+
+        <div id="bottom-elements">
+            <img src="../../assets/images/screen1_header_social_dribble.png" alt="">
+            <img src="../../assets/images/screen1_header_social_forrst.png" alt="">
+            <img src="../../assets/images/screen1_header_social_be.png" alt="">
         </div>
     </div>
 
-    <div *ngFor="let social of socialMenu">
-        <p>icon</p>
-        <p>{{social.time}}</p>
-        <p>{{social.author}}</p>
-        <p>{{social.description}}</p>
+
+    <div class="custom-container column" >
+        <div class="item" *ngFor="let social of socialMenu">
+            <div class="img">
+                <img src="{{social.icon}}" alt="">
+            </div>
+            <div class="description-menu">
+                <div class="description-menu-inner">
+                    <p>{{social.time}}</p>
+                    <p>{{social.author}}</p>
+                </div>
+                <p>{{social.description}}</p>
+            </div>
+        </div>
     </div>
+
+
+
+
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

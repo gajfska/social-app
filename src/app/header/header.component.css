@@ -1,3 +1,16 @@
-.header-custom {
-    background-color: black;
+.background-header{
+ background-color: black;
+}
+
+#menu-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-elements p {
+    color: white;
+}
+
+#menu-icons {
+    display: flex;
 }

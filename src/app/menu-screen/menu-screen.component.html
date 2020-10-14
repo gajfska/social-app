@@ -1,22 +1,33 @@
-<div>
+<div class="custom-menu">
     <div>
         <div>
-            <p>icon</p>
+            <img src="../../assets/images/screen2_menu_edit_ellipse.png">
         </div>
-        <div>
-            <p>photo</p>
-            <p>Designer Nemo</p>
-            <p>love with UI / GUI/ UX</p>
+
+        <div id="menu-heading">
+            <div id="menu-heading-inner">
+                <img src="../../assets/images/screen2_menu_profile_profilePhoto.png" alt="">
+                <p>Designer Nemo</p>
+                <p>love with UI / GUI/ UX</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="custom-container column">
+        <div class="item" *ngFor="let option of menu">
+            <div class="item-desc">
+                <img src="{{option.icon}}" alt="">
+                <p>{{option.description}}</p>
+            </div>
+            <p>{{option.counter}}</p>
         </div>
     </div>
 
-    <div *ngFor="let option of menu">
-        <p>icon</p>
-        <p>{{option.description}}</p>
-        <p>{{option.counter}}</p>
+
+    <div id="wrapper">
+        <button type="button"><img src="../../assets/images/screen2_menu_signout.png"></button>
     </div>
 
-    <div>
-        <button class="btn btn-success">baton</button>
-    </div>
 </div>

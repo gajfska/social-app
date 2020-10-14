@@ -1,0 +1,60 @@
+#home {
+    height: 100%;
+    background-image: url("../../assets/images/screen1_header_profile_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#bottom-elements {
+    display: flex;
+    justify-content: center;
+}
+
+
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+    height: 400px;
+}
+
+.item {
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
+}
+
+.item .img {
+    float: left;
+}
+
+.item .description-menu {
+    float: right;
+}
+
+.description-menu .description-menu-inner {
+    display: flex;
+    justify-content: space-between;
+}

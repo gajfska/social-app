@@ -7,6 +7,8 @@ import {HeaderComponent} from './header/header.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MenuScreenComponent} from './menu-screen/menu-screen.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import {MenuScreenComponent} from './menu-screen/menu-screen.component';
   imports: [
     BrowserModule,
       MatIconModule,
+      BrowserAnimationsModule,
+      MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
