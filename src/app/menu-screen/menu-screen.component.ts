@@ -29,7 +29,6 @@ export class MenuScreenComponent {
     currentlySelectedSectionOptions = [];
     currentlyOpenedDetailsIndex?: number;
 
-    showList = false;
 
     showDetails(index: number): void {
         if (index === this.currentlyOpenedDetailsIndex) {

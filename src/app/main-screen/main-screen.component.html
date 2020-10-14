@@ -1,145 +1,84 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="push">
+        <app-menu-screen></app-menu-screen>
+    </mat-sidenav>
 
-    <mat-sidenav-container class="example-container">
-        <mat-sidenav #sidenav mode="push">
-            <!--<p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
-            <app-menu-screen></app-menu-screen>
-        </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="background-main">
+            <div id="home">
+                <div id="header-elements">
+                    <input (click)="sidenav.toggle()" type="image"
+                           src="../../assets/images/screen1_header_top_menu_icon.png"/>
+                    <p><img src="../../assets/images/screen1_header_top_menu_name_shape.png"> uilove</p>
+                    <input type="image" src="../../assets/images/screen1_header_top_bio_icon.png"/>
+                </div>
 
-        <mat-sidenav-content>
-            <div class="background-main">
-                <div id="home">
-                    <div id="header-elements">
-                        <input (click)="sidenav.toggle()" type="image" src="../../assets/images/screen1_header_top_menu_icon.png" />
-                        <p> <img src="../../assets/images/screen1_header_top_menu_name_shape.png"> uilove</p>
-                        <input type="image" src="../../assets/images/screen1_header_top_bio_icon.png" />
-                    </div>
-
-                    <div id="content-box">
-                        <div id="content-box-inner">
-                            <span style="color: white">Principal </span>
-                            <span style="color: #f56f6c">Designers</span>
-                            <div class="desc">
-                                <h3 style="color: white">who belive in smplicity.</h3>
-                                <h5 style="color: #f56f6c">love with UI/ GUI/ UX</h5>
-                            </div>
+                <div id="content-box">
+                    <div id="content-box-inner">
+                        <span style="color: white">Principal </span>
+                        <span style="color: #f56f6c">Designers</span>
+                        <div class="desc">
+                            <h3 style="color: white">who belive in smplicity.</h3>
+                            <h5 style="color: #f56f6c">love with UI/ GUI/ UX</h5>
                         </div>
-                    </div>
-
-                    <div id="bottom-elements">
-                        <div class="bottom-element">
-                            <span [matBadge]="badgeCounter"><img src="../../assets/images/screen1_header_social_dribble.png" alt=""></span>
-                        </div>
-                        <div class="bottom-element">
-                            <img src="../../assets/images/screen1_header_social_forrst.png" alt="">
-                        </div>
-                        <div class="bottom-element">
-                            <img src="../../assets/images/screen1_header_social_be.png" alt="">
-                        </div>
-
                     </div>
                 </div>
 
+                <div id="bottom-elements">
+                    <div class="bottom-element">
+                        <span [matBadge]="badgeCounter"><img src="../../assets/images/screen1_header_social_dribble.png"
+                                                             alt=""></span>
+                    </div>
+                    <div class="bottom-element">
+                        <img src="../../assets/images/screen1_header_social_forrst.png" alt="">
+                    </div>
+                    <div class="bottom-element">
+                        <img src="../../assets/images/screen1_header_social_be.png" alt="">
+                    </div>
 
-                <mat-sidenav-container class="example-container" *ngFor="let social of socialMenu; let i = index">
-                    <mat-sidenav #sidenave mode="push" position="end">
-
-                        <div class="hidden-bg">
-                            <input (click)="sidenave.toggle()" type="image" src="../../assets/images/screen1_content_post3_eye.png" />
-                            <input (click)="addLike()" type="image" src="../../assets/images/screen1_content_post3_shape3.png" />
-                            <input (click)="onDelete(i)" type="image" src="../../assets/images/screen1_content_post3_rounded.png" />
-                        </div>
-
-
-                    </mat-sidenav>
-
-                    <mat-sidenav-content>
-
-                        <div class="custom-container column">
-
-                            <div class="item"  (click)="sidenave.toggle()">
-                                <div class="img">
-                                    <img src="{{social.icon}}" alt="">
-                                </div>
-                                <div class="description-menu">
-                                    <div class="description-menu-inner">
-                                        <p>{{social.time}}</p>
-                                        <p>{{social.author}}</p>
-                                    </div>
-                                    <div class="description-desc">
-                                        <p>{{social.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </mat-sidenav-content>
-                </mat-sidenav-container>
-
-
-
+                </div>
             </div>
 
-        </mat-sidenav-content>
-    </mat-sidenav-container>
+
+            <mat-sidenav-container class="example-container" *ngFor="let social of socialMenu; let i = index">
+                <mat-sidenav #sidenave mode="push" position="end">
+
+                    <div class="hidden-bg">
+                        <input (click)="sidenave.toggle()" type="image"
+                               src="../../assets/images/screen1_content_post3_eye.png"/>
+                        <input (click)="addLike()" type="image"
+                               src="../../assets/images/screen1_content_post3_shape3.png"/>
+                        <input (click)="onDelete(i)" type="image"
+                               src="../../assets/images/screen1_content_post3_rounded.png"/>
+                    </div>
 
 
-<!--</div>-->
-<!--<p>Hello</p>-->
-<!--<mat-sidenav-container class="example-container">-->
-    <!--<p>Elo</p>-->
+                </mat-sidenav>
 
-    <!--<mat-sidenav #sidenav [mode]="mode.value">-->
-        <!--<p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
-        <!--<p>-->
-            <!--<mat-radio-group class="example-radio-group" [formControl]="mode">-->
-                <!--<label>Mode:</label>-->
-                <!--<mat-radio-button value="over">Over</mat-radio-button>-->
-                <!--<mat-radio-button value="side">Side</mat-radio-button>-->
-                <!--<mat-radio-button value="push">Push</mat-radio-button>-->
-            <!--</mat-radio-group>-->
-        <!--</p>-->
-    <!--</mat-sidenav>-->
+                <mat-sidenav-content>
 
-    <!--<mat-sidenav-content>-->
-        <!--<p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
-        <!--<p>-->
-            <!--<mat-radio-group class="example-radio-group" [formControl]="mode">-->
-                <!--<label>Mode:</label>-->
-                <!--<mat-radio-button value="over">Over</mat-radio-button>-->
-                <!--<mat-radio-button value="side">Side</mat-radio-button>-->
-                <!--<mat-radio-button value="push">Push</mat-radio-button>-->
-            <!--</mat-radio-group>-->
-        <!--</p>-->
-    <!--</mat-sidenav-content>-->
-<!--</mat-sidenav-container>-->
+                    <div class="custom-container column">
 
-<!--<mat-sidenav-container class="example-container">-->
-    <!--<mat-sidenav #sidenav mode="push">-->
-        <!--<p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
-        <!--<app-menu-screen></app-menu-screen>-->
-    <!--</mat-sidenav>-->
+                        <div class="item" (click)="sidenave.toggle()">
+                            <div class="img">
+                                <img src="{{social.icon}}" alt="">
+                            </div>
+                            <div class="description-menu">
+                                <div class="description-menu-inner">
+                                    <p>{{social.time}}</p>
+                                    <p>{{social.author}}</p>
+                                </div>
+                                <div class="description-desc">
+                                    <p>{{social.description}}</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <!--<mat-sidenav-content>-->
-        <!--<p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>-->
-        <!--<p>-->
-            <!--Tutej jest cały podstawa-->
-            <!--&lt;!&ndash; <mat-radio-group class="example-radio-group" [formControl]="mode">-->
-              <!--<label>Mode:</label>-->
-              <!--<mat-radio-button value="over">Over</mat-radio-button>-->
-              <!--<mat-radio-button value="side">Side</mat-radio-button>-->
-              <!--<mat-radio-button value="push">Push</mat-radio-button>-->
-            <!--</mat-radio-group> &ndash;&gt;-->
-        <!--</p>-->
-    <!--</mat-sidenav-content>-->
-<!--</mat-sidenav-container>-->
+                    </div>
 
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+        </div>
 
-    <!--<div class="hidden-icons" [@list2] *ngIf="showIcon">-->
-        <!--<div class="hidden-bg">-->
-            <!--<input type="image" src="../../assets/images/screen1_content_post3_eye.png" />-->
-            <!--<input type="image" src="../../assets/images/screen1_content_post3_shape3.png" />-->
-            <!--<input type="image" src="../../assets/images/screen1_content_post3_rounded.png" />-->
-
-        <!--</div>-->
-    <!--</div>-->
+    </mat-sidenav-content>
+</mat-sidenav-container>

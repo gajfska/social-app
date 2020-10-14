@@ -1,5 +1,5 @@
-.background-header{
- background-color: black;
+.background-header {
+    background-color: black;
     width: auto;
     height: 35px;
 }
@@ -29,7 +29,7 @@
     display: flex;
 }
 
-#menu-icons img{
+#menu-icons img {
     height: 30px;
     padding: 5px 5px;
 }

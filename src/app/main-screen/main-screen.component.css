@@ -18,7 +18,7 @@
 #header-elements input {
     height: 27px;
     width: 27px;
-    outline:none
+    outline: none
 }
 
 #header-elements p {
@@ -27,7 +27,7 @@
     font-family: blackjack;
 }
 
-#header-elements p img{
+#header-elements p img {
     width: 25px;
 }
 
@@ -52,7 +52,7 @@
     margin-top: 20px;
 }
 
-#content-box-inner .desc h3, h5{
+#content-box-inner .desc h3, h5 {
     margin: 0;
     font-family: newCicleFina;
 }
@@ -72,7 +72,6 @@
     height: auto;
 }
 
-
 .mat-badge-content {
     width: auto;
     display: grid;
@@ -83,7 +82,6 @@
     background-color: #f56f6c;
     left: 25px;
 }
-
 
 .custom-container {
     display: flex;
@@ -130,13 +128,11 @@
     margin-bottom: 0;
 }
 
-
-.description-menu .description-desc p{
+.description-menu .description-desc p {
     font-family: newCicleFina;
     color: white;
     font-size: 19px;
 }
-
 
 .hidden-bg {
     height: 120px;
@@ -151,11 +147,11 @@
 
 .hidden-bg input {
     padding: 0 10px;
-    outline:none
+    outline: none
 }
 
 .hidden-bg input:hover,
 .hidden-bg input:active {
     opacity: 0.5;
-    outline:none
+    outline: none
 }

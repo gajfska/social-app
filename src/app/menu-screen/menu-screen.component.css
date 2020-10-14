@@ -18,9 +18,6 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    /*position: relative;*/
-    /*top: 0;*/
-    /*left: 0;*/
 }
 
 .image1 {
@@ -28,9 +25,9 @@
     top: 0;
     left: 0;
     border: 8px solid #272b39;
-    -moz-border-radius:190px;
-    -webkit-border-radius:190px;
-    border-radius:190px;
+    -moz-border-radius: 190px;
+    -webkit-border-radius: 190px;
+    border-radius: 190px;
 }
 
 #menu-heading-inner h3, h5 {
@@ -108,10 +105,9 @@
     border-radius: 50px / 60px;
 }
 
-.item:hover #oval{
+.item:hover #oval {
     background-color: #135360;
 }
-
 
 .setting-list {
     height: 30px;
@@ -132,7 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    outline:none
+    outline: none
 }
 
 #wrapper input {

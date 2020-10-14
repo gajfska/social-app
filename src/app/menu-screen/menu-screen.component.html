@@ -17,37 +17,29 @@
     <div class="custom-container column">
         <div *ngFor="let option of menu; let i = index" (click)="showDetails(i)">
             <div class="item">
-            <div class="item-desc">
-                <div class="img">
-                    <img src="{{option.icon}}" alt="">
-                </div>
+                <div class="item-desc">
+                    <div class="img">
+                        <img src="{{option.icon}}" alt="">
+                    </div>
 
-                <p>{{option.description}}</p>
-            </div>
-            <div class="item-counter" *ngIf="i<3">
-                <span id="oval"><p class="counter">{{option.counter}}</p></span>
-            </div>
+                    <p>{{option.description}}</p>
+                </div>
+                <div class="item-counter" *ngIf="i<3">
+                    <span id="oval"><p class="counter">{{option.counter}}</p></span>
+                </div>
             </div>
 
             <div *ngIf="i===currentlyOpenedDetailsIndex">
-            <div class="setting-list" *ngFor="let option of currentlySelectedSectionOptions" >
-                <p>{{option}}</p>
-            </div>
+                <div class="setting-list" *ngFor="let option of currentlySelectedSectionOptions">
+                    <p>{{option}}</p>
+                </div>
             </div>
 
         </div>
 
         <div id="wrapper">
-            <input type="image" src="../../assets/images/screen2_menu_signout.png" />
+            <input type="image" src="../../assets/images/screen2_menu_signout.png"/>
         </div>
     </div>
-
-    <!--<div *ngIf="showList">-->
-        <!--<div class="setting-list" *ngFor="let setting of settings" >-->
-            <!--<p>{{setting}}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-
-
 
 </div>
