@@ -8,7 +8,14 @@ import {HeaderComponent} from './header/header.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MenuScreenComponent} from './menu-screen/menu-screen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSliderModule} from '@angular/material/slider';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {FormControl, FormsModule} from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatRippleModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -22,8 +29,18 @@ import {MatSliderModule} from '@angular/material/slider';
     BrowserModule,
       MatIconModule,
       BrowserAnimationsModule,
-      MatSliderModule
+      FormsModule,
+      MatSidenavModule,
+      MatRadioModule,
+      MatSlideToggleModule,
+      MatFormFieldModule
   ],
+    exports: [
+        MatButtonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatRippleModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
