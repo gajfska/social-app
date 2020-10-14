@@ -1,6 +1,6 @@
 .custom-menu {
     background-color: #252931;
-    width: 400px;
+    width: 390px;
     height: 1000px;
 }
 
@@ -91,6 +91,7 @@
 .item-counter {
     display: flex;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .counter {
@@ -139,4 +140,11 @@
 #wrapper input:hover {
     outline: none;
     opacity: 0.5;
+}
+
+
+@media (max-width: 380px) {
+    .custom-menu {
+        width: 350px;
+    }
 }
