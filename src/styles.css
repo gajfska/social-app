@@ -2,3 +2,23 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: blackjack;
+    src: url(assets/fonts/Blackjack.otf) format("opentype");
+}
+
+@font-face {
+    font-family: helveticaNeueBold;
+    src: url(assets/fonts/HelveticaNeueBold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: newCicleFina;
+    src: url(assets/fonts/NewCicleFina.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: newCicleGordita;
+    src: url(assets/fonts/NewCicleGordita.ttf) format("opentype");
+}
