@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+#header-elements p {
+    font-family: blackjack;
+}
+
 
 #content-box {
     width: 100%;
@@ -21,6 +25,14 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+
+#content-box-inner p {
+    font-family: blackjack;
+}
+
+#content-box-inner .desc p{
+    font-family: newCicleFina;
 }
 
 #bottom-elements {
@@ -57,21 +69,10 @@
 .description-menu .description-menu-inner {
     display: flex;
     justify-content: space-between;
+    font-family: calibriBold;
 }
 
 
-
-.example-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.example-radio-group {
-    display: block;
-    border: 1px solid #555;
-    margin: 20px;
-    padding: 10px;
+.description-menu .description-desc p{
+    font-family: newCicleFina;
 }

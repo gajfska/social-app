@@ -22,3 +22,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-family: newCicleGordita;
     src: url(assets/fonts/NewCicleGordita.ttf) format("opentype");
 }
+
+@font-face {
+    font-family: calibriBold;
+    src: url(assets/fonts/Calibrib.ttf) format("opentype");
+}

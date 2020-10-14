@@ -1,5 +1,7 @@
 .background-header{
  background-color: black;
+    width: auto;
+    height: 35px;
 }
 
 #menu-elements {
@@ -9,8 +11,25 @@
 
 #menu-elements p {
     color: white;
+    text-transform: uppercase;
+    font-family: helveticaNeueBold;
+    font-size: 18px;
+}
+
+#menu-desc {
+    display: flex;
+    padding-left: 5px;
+}
+
+#menu-desc span {
+    color: white;
 }
 
 #menu-icons {
     display: flex;
+}
+
+#menu-icons img{
+    height: 30px;
+    padding: 5px 5px;
 }

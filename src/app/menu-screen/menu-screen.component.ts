@@ -15,8 +15,8 @@ export class MenuModel {
 export class MenuScreenComponent {
 
     menu: MenuModel[] = [
-        {icon: '../../assets/images/screen2_menu_menu_mail.png', description: 'Mail inbox', counter: 5},
-        {icon: '../../assets/images/screen2_menu_menu_friends.png', description: 'Friends', counter: 25},
+        {icon: '../../assets/images/screen2_menu_menu_mail.png', description: 'Mail Inbox', counter: 5},
+        {icon: '../../assets/images/screen2_menu_menu_friends_w.png', description: 'Friends', counter: 25},
         {icon: '../../assets/images/screen2_menu_menu_invites.png', description: 'Invites', counter: 1},
         {icon: '../../assets/images/screen2_menu_menu_bookmarks.png', description: 'Bookmarks'},
         {icon: '../../assets/images/screen2_menu_menu_settings.png', description: 'Account settings'}
