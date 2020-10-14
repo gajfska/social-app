@@ -22,4 +22,16 @@ export class MainScreenComponent {
         {icon: '../../assets/images/screen1_content_post4_logo.png', time: '2 hours ago ', author: 'by Bill & Kennedy', description: 'Bamboo Branding Wall Peace- not flat'},
     ];
 
+    badgeCounter = 2;
+    task: SocialModel[] = [];
+
+
+    addLike(): void {
+        this.badgeCounter++;
+    }
+
+    onDelete(index: number): void {
+        this.socialMenu.splice(index, 1);
+    }
+
 }

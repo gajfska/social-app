@@ -16,6 +16,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatRippleModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import {MatBadgeModule} from '@angular/material/badge';
+
 
 
 @NgModule({
@@ -33,14 +35,10 @@ import {MatInputModule} from '@angular/material/input';
       MatSidenavModule,
       MatRadioModule,
       MatSlideToggleModule,
-      MatFormFieldModule
+      MatFormFieldModule,
+      MatBadgeModule,
+      MatButtonModule
   ],
-    exports: [
-        MatButtonModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatRippleModule,
-    ],
   providers: [],
   bootstrap: [AppComponent]
 })

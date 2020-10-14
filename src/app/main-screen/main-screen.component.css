@@ -18,6 +18,7 @@
 #header-elements input {
     height: 27px;
     width: 27px;
+    outline:none
 }
 
 #header-elements p {
@@ -72,6 +73,17 @@
 }
 
 
+.mat-badge-content {
+    width: auto;
+    display: grid;
+    min-width: 32px;
+    min-height: 28px;
+    text-align: center;
+    align-items: center;
+    background-color: #f56f6c;
+    left: 25px;
+}
+
 
 .custom-container {
     display: flex;
@@ -80,7 +92,7 @@
 
 .column {
     flex-direction: column;
-    height: 400px;
+    height: 120px;
 }
 
 .item {
@@ -123,4 +135,27 @@
     font-family: newCicleFina;
     color: white;
     font-size: 19px;
+}
+
+
+.hidden-bg {
+    height: 120px;
+    width: 250px;
+    background-image: url("../../assets/images/screen1_content_post3_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hidden-bg input {
+    padding: 0 10px;
+    outline:none
+}
+
+.hidden-bg input:hover,
+.hidden-bg input:active {
+    opacity: 0.5;
+    outline:none
 }
